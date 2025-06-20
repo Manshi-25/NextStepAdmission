@@ -1,0 +1,97 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+
+@layer base {
+  :root {
+    --background: 242 242 242; /* #f2f2f2 - Light gray */
+    --foreground: 0 0% 0%; /* #000000 - Black */
+
+    --card: 234 228 213; /* #eae4d5 - Cream beige */
+    --card-foreground: 0 0% 0%; /* #000000 - Black */
+
+    --popover: 234 228 213; /* #eae4d5 - Cream beige */
+    --popover-foreground: 0 0% 0%; /* #000000 - Black */
+
+    --primary: 32 25% 63%; /* #b6b09f - Soft taupe */
+    --primary-foreground: 0 0% 0%; /* #000000 - Black */
+
+    --secondary: 234 228 213; /* #eae4d5 - Cream beige */
+    --secondary-foreground: 0 0% 0%; /* #000000 - Black */
+
+    --muted: 234 228 213; /* #eae4d5 - Cream beige */
+    --muted-foreground: 0 0% 35%; /* Darker gray for muted text */
+
+    --accent: 32 25% 63%; /* #b6b09f - Soft taupe */
+    --accent-foreground: 0 0% 0%; /* #000000 - Black */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 32 25% 63%; /* #b6b09f - Soft taupe */
+    --input: 234 228 213; /* #eae4d5 - Cream beige */
+    --ring: 32 25% 63%; /* #b6b09f - Soft taupe */
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 242 242 242; /* #f2f2f2 - Light gray */
+    --sidebar-foreground: 0 0% 0%; /* #000000 - Black */
+    --sidebar-primary: 32 25% 63%; /* #b6b09f - Soft taupe */
+    --sidebar-primary-foreground: 0 0% 0%; /* #000000 - Black */
+    --sidebar-accent: 234 228 213; /* #eae4d5 - Cream beige */
+    --sidebar-accent-foreground: 0 0% 0%; /* #000000 - Black */
+    --sidebar-border: 32 25% 63%; /* #b6b09f - Soft taupe */
+    --sidebar-ring: 32 25% 63%; /* #b6b09f - Soft taupe */
+  }
+
+  .dark {
+    --background: 0 0% 0%; /* #000000 - Black */
+    --foreground: 242 242 242; /* #f2f2f2 - Light gray */
+
+    --card: 0 0% 0%; /* #000000 - Black */
+    --card-foreground: 242 242 242; /* #f2f2f2 - Light gray */
+
+    --popover: 0 0% 0%; /* #000000 - Black */
+    --popover-foreground: 242 242 242; /* #f2f2f2 - Light gray */
+
+    --primary: 32 25% 63%; /* #b6b09f - Soft taupe */
+    --primary-foreground: 0 0% 0%; /* #000000 - Black */
+
+    --secondary: 32 25% 63%; /* #b6b09f - Soft taupe */
+    --secondary-foreground: 0 0% 0%; /* #000000 - Black */
+
+    --muted: 32 25% 63%; /* #b6b09f - Soft taupe */
+    --muted-foreground: 242 242 242; /* #f2f2f2 - Light gray */
+
+    --accent: 32 25% 63%; /* #b6b09f - Soft taupe */
+    --accent-foreground: 0 0% 0%; /* #000000 - Black */
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 32 25% 63%; /* #b6b09f - Soft taupe */
+    --input: 32 25% 63%; /* #b6b09f - Soft taupe */
+    --ring: 32 25% 63%; /* #b6b09f - Soft taupe */
+    --sidebar-background: 0 0% 0%; /* #000000 - Black */
+    --sidebar-foreground: 242 242 242; /* #f2f2f2 - Light gray */
+    --sidebar-primary: 32 25% 63%; /* #b6b09f - Soft taupe */
+    --sidebar-primary-foreground: 0 0% 0%; /* #000000 - Black */
+    --sidebar-accent: 32 25% 63%; /* #b6b09f - Soft taupe */
+    --sidebar-accent-foreground: 242 242 242; /* #f2f2f2 - Light gray */
+    --sidebar-border: 32 25% 63%; /* #b6b09f - Soft taupe */
+    --sidebar-ring: 32 25% 63%; /* #b6b09f - Soft taupe */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

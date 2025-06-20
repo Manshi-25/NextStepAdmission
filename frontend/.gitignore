@@ -1,3 +1,4 @@
+VITE_API_URL= https://nextstepadmission.onrender.com
 # Logs
 logs
 *.log

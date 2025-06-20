@@ -20,7 +20,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const email = localStorage.getItem('userEmail'); // ← store on login
   if (email) {
     try {
-      await axios.post('http://localhost:5000/api/auth/logout', { email });
+      await axios.post(`${import.meta.env.VITE_API_URL}/api/auth/logout`, { email });
     } catch (err) {
       console.error("Logout log error:", err);
     }

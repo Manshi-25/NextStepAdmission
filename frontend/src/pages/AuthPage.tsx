@@ -18,8 +18,8 @@ const AuthPage = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const url = isSignIn
-      ? 'http://localhost:5000/api/auth/login'
-      : 'http://localhost:5000/api/auth/signup';
+      ? `${import.meta.env.VITE_API_URL}/api/auth/login`
+      : `${import.meta.env.VITE_API_URL}/api/auth/signup`;
 
     try {
       const response = await axios.post(url, form);

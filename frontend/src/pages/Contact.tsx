@@ -105,7 +105,7 @@ const Contact = () => {
               <Card className="bg-white border-[#b6b09f]">
                 <CardContent className="pt-6">
                   <form onSubmit={handleSubmit} className="space-y-6">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 border-black">
                       <div>
                         <Label htmlFor="name" className="text-black">Full Name *</Label>
                         <Input
@@ -146,7 +146,7 @@ const Contact = () => {
                           <SelectTrigger className="mt-1 bg-white border-[#b6b09f] focus:border-black">
                             <SelectValue placeholder="Select a service" />
                           </SelectTrigger>
-                          <SelectContent>
+                          <SelectContent className="bg-white border-[#b6b09f]">
                             <SelectItem value="career-counseling">Career Counseling</SelectItem>
                             <SelectItem value="college-admissions">College Admissions</SelectItem>
                             <SelectItem value="study-abroad">Study Abroad</SelectItem>
@@ -235,11 +235,21 @@ const Contact = () => {
           </div>
           
           <div className="bg-[#eae4d5] border border-[#b6b09f] rounded-lg h-96 flex items-center justify-center">
-            <div className="text-center">
+            {/*<div className="text-center">
               <MapPin className="h-12 w-12 text-[#b6b09f] mx-auto mb-4" />
               <p className="text-gray-700">Interactive map will be integrated here</p>
               <p className="text-sm text-gray-600 mt-2">Co-Workers 5/588, Near Dayal Paradise Hotel , Vikas Khand , Gomti Nagar , Lucknow - 226010 , India</p>
-            </div>
+            </div>*/}
+            <iframe
+              title="Office Location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.903524083217!2d80.99335707522184!3d26.843020676688766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be30cbafd6e5d%3A0xb29de585a8a90ddc!2sThe%20Co-Workers!5e0!3m2!1sen!2sin!4v1750521223669!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="w-full h-full"
+            />
           </div>
         </div>
       </section>

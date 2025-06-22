@@ -36,9 +36,9 @@ const Home = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#2e141c]">
+    <div className="min-h-screen bg-[#EBEDDF]">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#b159ac] to-[#905989] text-black py-20">
+      <section className="relative bg-gradient-to-br from-[#EBEDDF] to-[#EBEDDF] text-black py-20">
         <div className="absolute inset-0 opacity-20"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
@@ -49,10 +49,10 @@ const Home = () => {
               Expert career counseling, admission guidance, and study abroad assistance to help you achieve your dreams.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-black hover:bg-[#eae4d5]" asChild>
+              <Button size="lg" className="bg-zinc-800 text-white hover:bg-[#e3e0f2] hover:text-black" asChild>
                 <Link to="/contact">Start Your Journey</Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-white bg-white  hover:bg-[#eae4d5] text-black" asChild>
+              <Button size="lg" variant="outline" className="border-white bg-zinc-800  hover:bg-[#e3e0f2] text-white" asChild>
                 <Link to="/services">Our Services</Link>
               </Button>
             </div>
@@ -61,7 +61,7 @@ const Home = () => {
       </section>
 
       {/* Features Section bg-[#4a2c39] */}
-      <section className="py-20 bg-[#dfbddd]">
+      <section className="py-20 bg-[#EBEDDF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-black mb-4">
@@ -74,7 +74,7 @@ const Home = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
-              <Card key={index} className="text-center hover:shadow-lg transition-shadow bg-white hover:bg-slate-200 border-[#b6b09f]">
+              <Card key={index} className="text-center hover:shadow-lg transition-shadow bg-[#e3e0f2] hover:bg-slate-200 border-[#100f0e]">
                 <CardHeader>
                   <div className="flex justify-center mb-4">
                     {feature.icon}
@@ -91,7 +91,7 @@ const Home = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-[#dfbddd] text-black">
+      <section className="py-20 bg-[#EBEDDF] text-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
@@ -105,7 +105,7 @@ const Home = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 bg-[#dfbddd]">
+      <section className="py-20 bg-[#EBEDDF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -138,7 +138,7 @@ const Home = () => {
               <img 
                 src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&h=400&q=80"
                 alt="Students studying"
-                className="rounded-lg shadow-xl border border-[#b6b09f]"
+                className="rounded-lg shadow-xl border border-[#0d0c0b]"
               />
             </div>
           </div>
@@ -146,15 +146,15 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-[black] text-white">
+      <section className="py-20 bg-[#EBEDDF] text-black">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">
             Ready to Start Your Educational Journey?
           </h2>
-          <p className="text-xl text-[#f2f2f2] mb-8">
+          <p className="text-xl text-zinc-800 mb-8">
             Get in touch with our expert counselors and take the first step towards your dream career.
           </p>
-          <Button size="lg" className="bg-[#edebe6] text-black hover:bg-[#eae4d5]" asChild>
+          <Button size="lg" className="bg-zinc-800 text-white hover:bg-[#e3e0f2] hover:text-black" asChild>
             <Link to="/contact">
               Book Free Consultation <ArrowRight className="ml-2 h-5 w-5" />
             </Link>

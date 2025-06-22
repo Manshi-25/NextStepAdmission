@@ -91,9 +91,9 @@ const Contact = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#905989]">
+    <div className="min-h-screen bg-[#EBEDDF]">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-[#b159ac] to-[#905989] text-black py-20">
+      <section className="bg-gradient-to-r from-[#EBEDDF] to-[#EBEDDF] text-black py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">Contact Us</h1>
           <p className="text-xl text-zinc-800">
@@ -103,13 +103,13 @@ const Contact = () => {
       </section>
 
       {/* Contact Form and Info */}
-      <section className="py-20 bg-[#dfbddd]">
+      <section className="py-20 bg-[#EBEDDF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div>
               <h2 className="text-3xl font-bold text-black mb-6">Send us a Message</h2>
-              <Card className="bg-white border-[#b6b09f]">
+              <Card className="bg-white border-[#0f0e0b]">
                 <CardContent className="pt-6">
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 border-black">
@@ -186,7 +186,7 @@ const Contact = () => {
               <div className="mt-12">
                 <h2 className="text-3xl font-bold text-black mb-6">Social Links</h2>
                 <div className="space-y-6">
-                  <Card className="bg-white border-[#b6b09f] ">
+                  <Card className="bg-white border-[#11100d] ">
                     <CardContent className="pt-6">
                       <div className="flex items-center space-x-10">
                         <a href="https://www.facebook.com/profile.php?id=61577012327030" className="text-[#b6b09f] hover:text-sky-600 transition-colors ml-5">
@@ -209,7 +209,7 @@ const Contact = () => {
               <h2 className="text-3xl font-bold text-black mb-6">Get in Touch</h2>
               <div className="space-y-6">
                 {contactInfo.map((info, index) => (
-                  <Card key={index} className="bg-white border-[#b6b09f]">
+                  <Card key={index} className="bg-white border-[#0c0b05]">
                     <CardContent className="pt-6">
                       <div className="flex items-start space-x-4">
                         <div className="flex-shrink-0">
@@ -234,7 +234,7 @@ const Contact = () => {
       </section>
 
       {/* Map Section */}
-      <section className="py-20 bg-[#dfbddd]">
+      <section className="py-20 bg-[#EBEDDF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-black mb-4">Find Our Office</h2>
@@ -262,14 +262,14 @@ const Contact = () => {
       </section>
 
       {/* WhatsApp CTA */}
-      <section className="py-20 bg-black text-white">
+      <section className="py-20 bg-[#EBEDDF] text-black">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <MessageCircle className="h-16 w-16 mx-auto mb-6 text-[#b6b09f]" />
+          <MessageCircle className="h-16 w-16 mx-auto mb-6 text-green-500" />
           <h2 className="text-3xl font-bold mb-6">Need Immediate Help?</h2>
-          <p className="text-xl text-[#f2f2f2] mb-8">
+          <p className="text-xl text-zinc-800 mb-8">
             Chat with our counselors on WhatsApp for quick assistance and guidance.
           </p>
-          <Button onClick={handleWhatsAppClick} size="lg" className="bg-[#b6b09f] text-black hover:bg-[#eae4d5]">
+          <Button onClick={handleWhatsAppClick} size="lg" className="bg-green-500 text-black hover:bg-[#e3e0f2] ">
             <MessageCircle className="mr-2 h-5 w-5" />
             Chat on WhatsApp
           </Button>

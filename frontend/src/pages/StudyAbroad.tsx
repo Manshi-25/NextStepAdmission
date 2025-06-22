@@ -125,7 +125,7 @@ const StudyAbroad = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className=" bg-[#b159ac] bg-gradient-to-r from-[#b159ac] to-[#905989] text-black py-20">
+      <section className=" bg-[#EBEDDF] bg-gradient-to-r from-[#EBEDDF] to-[#EBEDDF] text-black py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">Study Abroad</h1>
           <p className="text-xl text-zinc-800">
@@ -135,10 +135,10 @@ const StudyAbroad = () => {
       </section>
 
       {/* Countries Section */}
-      <section className="py-20 bg-[#dfbddd]">
+      <section className="py-20 bg-[#EBEDDF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8bg-[#eae4d5]" >
           <div className="text-center mb-16">
-            <h2 className="text-3xl bg-[#dfbddd] font-bold text-black mb-4">Popular Study Destinations</h2>
+            <h2 className="text-3xl bg-[#EBEDDF] font-bold text-black mb-4">Popular Study Destinations</h2>
             <p className="text-xl text-zinc-800">
               Discover the best countries for your international education
             </p>
@@ -205,7 +205,7 @@ const StudyAbroad = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 bg-[#dfbddd]">
+      <section className="py-20 bg-[#EBEDDF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-black mb-4">Our Study Abroad Services</h2>
@@ -216,7 +216,7 @@ const StudyAbroad = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
-              <Card key={index} className="text-center hover:shadow-lg transition-shadow bg-[#eae4d5]">
+              <Card key={index} className="text-center hover:shadow-lg transition-shadow bg-[#e3e0f2] border-[#21201c]">
                 <CardHeader>
                   <div className="flex justify-center mb-4">
                     {service.icon}
@@ -233,7 +233,7 @@ const StudyAbroad = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-[#dfbddd] text-black">
+      <section className="py-20 bg-[#EBEDDF] text-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Study Abroad Success</h2>
@@ -261,13 +261,13 @@ const StudyAbroad = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-[black]">
+      <section className="py-20 bg-[#EBEDDF]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">Ready to Study Abroad?</h2>
-          <p className="text-xl text-slate-200 mb-8">
+          <h2 className="text-3xl font-bold text-black mb-6">Ready to Study Abroad?</h2>
+          <p className="text-xl text-zinc-800 mb-8">
             Start your international education journey with expert guidance from our counselors.
           </p>
-          <Button size="lg" asChild>
+          <Button size="lg" asChild className="bg-zinc-800 text-white hover:text-black hover:bg-[#e3e0f2]">
             <Link to="/contact">Get Free Consultation</Link>
           </Button>
         </div>

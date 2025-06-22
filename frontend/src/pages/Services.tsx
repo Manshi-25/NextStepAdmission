@@ -108,9 +108,9 @@ const Services = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#2e141c]">
+    <div className="min-h-screen bg-[#EBEDDF]">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-[#b159ac] to-[#905989] text-black py-20">
+      <section className="bg-gradient-to-r from-[#EBEDDF] to-[#EBEDDF] text-black py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">Our Services</h1>
           <p className="text-xl text-zinc-800">
@@ -120,7 +120,7 @@ const Services = () => {
       </section>
 
       {/* Services Grid */}
-      <section className="py-20 bg-[#dfbddd]">
+      <section className="py-20 bg-[#EBEDDF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-black mb-4">What We Offer</h2>
@@ -131,7 +131,7 @@ const Services = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <Card key={index} className="h-full hover:shadow-lg transition-shadow bg-[#ffffff] hover:bg-slate-200 border-[#b6b09f]">
+              <Card key={index} className="h-full hover:shadow-lg transition-shadow bg-[#e3e0f2] hover:bg-slate-200 border-[#090806]">
                 <CardHeader className="text-center">
                   <div className="flex justify-center mb-4">
                     {service.icon}
@@ -156,7 +156,7 @@ const Services = () => {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-[#dfbddd]">
+      <section className="py-20 bg-[#EBEDDF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-black mb-4">Our Process</h2>
@@ -180,13 +180,13 @@ const Services = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-black text-white">
+      <section className="py-20 bg-[#EBEDDF] text-black">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Get Started?</h2>
-          <p className="text-xl text-[#f2f2f2] mb-8">
+          <p className="text-xl text-zinc-800 mb-8">
             Book a free consultation with our expert counselors today and take the first step towards your dream career.
           </p>
-          <Button size="lg" className="bg-[#b6b09f] text-black hover:bg-[#eae4d5]" asChild>
+          <Button size="lg" className="bg-zinc-800 text-white hover:text-black hover:bg-[#e3e0f2]" asChild>
             <Link to="/contact">Book Free Consultation</Link>
           </Button>
         </div>

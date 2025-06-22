@@ -117,9 +117,9 @@ const Blog = () => {
 
 
   return (
-    <div className="min-h-screen bg-[#dfbddd]">
+    <div className="min-h-screen bg-[#EBEDDF]">
       {/* Hero Section */}
-      <section className=" bg-[#2e141c] bg-gradient-to-r from-[#dfbddd] to-[#905989] text-black py-20">
+      <section className=" bg-[#EBEDDF] bg-gradient-to-r from-[#EBEDDF] to-[#EBEDDF] text-black py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">Educational Blog</h1>
           <p className="text-xl text-zinc-800">
@@ -129,7 +129,7 @@ const Blog = () => {
       </section>
 
       {/* Featured Post */}
-      <section className="py-20 bg-[#dfbddd]">
+      <section className="py-20 bg-[#EBEDDF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-black mb-8">Featured Article</h2>
@@ -176,7 +176,7 @@ const Blog = () => {
       </section>
 
       {/* Categories Filter */}
-      <section className="py-8 bg-[#dfbddd]">
+      <section className="py-8 bg-[#EBEDDF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap gap-2 justify-center">
             {categories.map((category, index) => (
@@ -192,7 +192,7 @@ const Blog = () => {
       </section>
 
       {/* Recent Posts */}
-      <section className="py-20 bg-[#dfbddd]">
+      <section className="py-20 bg-[#EBEDDF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-black mb-12">Recent Articles</h2>
           
@@ -239,7 +239,7 @@ const Blog = () => {
       </section>
 
       {/* Newsletter Signup */}
-      <section className="py-20 bg-[#dfbddd] text-black">
+      <section className="py-20 bg-[#EBEDDF] text-black">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Stay Updated</h2>
           <p className="text-xl text-zinc-800 mb-8">
@@ -260,10 +260,10 @@ const Blog = () => {
             <input type="email" value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email" required
-              className="flex-1 px-4 py-3 rounded-lg text-black border border-[#b6b09f] focus:outline-none focus:border-[#eae4d5]"
+              className="flex-1 px-4 py-3 rounded-lg text-black border border-[#060605] focus:outline-none focus:border-[#eae4d5]"
             />
             <Button type="submit"
-            className="bg-[#c72828] text-white hover:bg-[#eae4d5] hover:text-zinc-800">
+            className="bg-[#c72828] text-white hover:bg-[#e3e0f2] hover:text-zinc-800 border-[#060605]">
               Subscribe
             </Button>
           </form>

@@ -52,7 +52,7 @@ const AuthPage = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#2e141c] px-4 ">
+    <div className="min-h-screen flex items-center justify-center bg-[#dfbddd] px-4 ">
       <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md ">
         <h1 className="text-2xl font-bold mb-6 text-center">
           {isSignIn ? 'Sign In' : 'Sign Up'}
@@ -90,7 +90,7 @@ const AuthPage = () => {
             required
           />
 
-          <Button type="submit" className="w-full bg-black text-white">
+          <Button type="submit" className="w-full bg-black text-white hover:bg-orange-100 hover:text-black">
             {isSignIn ? 'Sign In' : 'Sign Up'}
           </Button>
         </form>

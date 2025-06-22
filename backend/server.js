@@ -6,6 +6,7 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import Contact from './models/contact.js';
 import authRoutes from './routes/auth.js'; 
+import newsletterRoutes from './routes/newsletter.js';
 dotenv.config();
 
 // ✅ Define `app` before using it
@@ -14,7 +15,7 @@ dotenv.config();
 app.use(cors({ origin:'*'}));
 app.use(bodyParser.json());
 app.use('/api/auth', authRoutes);
-
+app.use('/api', newsletterRoutes);
 
 // ✅ MongoDB connection
 mongoose.connect(process.env.MONGODB_URI)

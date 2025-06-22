@@ -125,21 +125,21 @@ const StudyAbroad = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className=" bg-[#2e141c] bg-gradient-to-r from-[#2e141c] to-black text-white py-20">
+      <section className=" bg-[#b159ac] bg-gradient-to-r from-[#b159ac] to-[#905989] text-black py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">Study Abroad</h1>
-          <p className="text-xl text-blue-100">
+          <p className="text-xl text-zinc-800">
             Explore world-class education opportunities in top destinations around the globe.
           </p>
         </div>
       </section>
 
       {/* Countries Section */}
-      <section className="py-20 bg-[#2e141c]">
+      <section className="py-20 bg-[#dfbddd]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8bg-[#eae4d5]" >
           <div className="text-center mb-16">
-            <h2 className="text-3xl bg-[#2e141c] font-bold text-white mb-4">Popular Study Destinations</h2>
-            <p className="text-xl text-slate-200">
+            <h2 className="text-3xl bg-[#dfbddd] font-bold text-black mb-4">Popular Study Destinations</h2>
+            <p className="text-xl text-zinc-800">
               Discover the best countries for your international education
             </p>
           </div>
@@ -205,11 +205,11 @@ const StudyAbroad = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 bg-[#2e141c]">
+      <section className="py-20 bg-[#dfbddd]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-white mb-4">Our Study Abroad Services</h2>
-            <p className="text-xl text-slate-200">
+            <h2 className="text-3xl font-bold text-black mb-4">Our Study Abroad Services</h2>
+            <p className="text-xl text-zinc-800">
               Comprehensive support for your international education journey
             </p>
           </div>
@@ -233,7 +233,7 @@ const StudyAbroad = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-[#2e141c] text-white">
+      <section className="py-20 bg-[#dfbddd] text-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Study Abroad Success</h2>
@@ -242,26 +242,26 @@ const StudyAbroad = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="text-4xl font-bold mb-2">2500+</div>
-              <div className="text-slate-200">Students Placed</div>
+              <div className="text-zinc-800">Students Placed</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold mb-2">95%</div>
-              <div className="text-slate-200">Visa Success Rate</div>
+              <div className="text-zinc-800">Visa Success Rate</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold mb-2">50+</div>
-              <div className="text-slate-200">Partner Universities</div>
+              <div className="text-zinc-800">Partner Universities</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold mb-2">15+</div>
-              <div className="text-slate-200">Countries</div>
+              <div className="text-zinc-800">Countries</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-[#2e141c]">
+      <section className="py-20 bg-[black]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-6">Ready to Study Abroad?</h2>
           <p className="text-xl text-slate-200 mb-8">

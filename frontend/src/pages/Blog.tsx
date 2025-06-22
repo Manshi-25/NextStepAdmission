@@ -1,8 +1,10 @@
-
+import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, User, ArrowRight, Clock } from "lucide-react";
+import axios from "axios";
+
 
 const Blog = () => {
   const blogPosts = [
@@ -89,23 +91,48 @@ const Blog = () => {
   const featuredPost = blogPosts[0];
   const recentPosts = blogPosts.slice(1);
 
+  const [email, setEmail] = useState("");
+  const [status, setStatus] = useState("");
+
+  const handleSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!email) {
+      setStatus("Please enter a valid email.");
+      return;
+    }
+
+    try {
+      const res = await axios.post(`${import.meta.env.VITE_API_URL}/api/subscribe`, { email });
+      setStatus("Subscribed successfully!");
+      setEmail("");
+    } catch (error) {
+      if (error.response?.status === 409) {
+        setStatus("You're already subscribed.");
+      } else {
+        setStatus("Something went wrong. Please try again.");
+      }
+    }
+  };
+
+
   return (
-    <div className="min-h-screen bg-[#2e141c]">
+    <div className="min-h-screen bg-[#dfbddd]">
       {/* Hero Section */}
-      <section className=" bg-[#2e141c] bg-gradient-to-r from-[#2e141c] to-black text-white py-20">
+      <section className=" bg-[#2e141c] bg-gradient-to-r from-[#dfbddd] to-[#905989] text-black py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">Educational Blog</h1>
-          <p className="text-xl text-[#f2f2f2]">
+          <p className="text-xl text-zinc-800">
             Stay updated with the latest insights, tips, and trends in education and career development.
           </p>
         </div>
       </section>
 
       {/* Featured Post */}
-      <section className="py-20 bg-[#2e141c]">
+      <section className="py-20 bg-[#dfbddd]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12">
-            <h2 className="text-3xl font-bold text-white mb-8">Featured Article</h2>
+            <h2 className="text-3xl font-bold text-black mb-8">Featured Article</h2>
             <Card className="overflow-hidden hover:shadow-lg transition-shadow bg-white border-[#b6b09f]">
               <div className="grid grid-cols-1 lg:grid-cols-2">
                 <div className="relative">
@@ -149,27 +176,25 @@ const Blog = () => {
       </section>
 
       {/* Categories Filter */}
-      <section className="py-8 bg-[#f2f2f2]">
+      <section className="py-8 bg-[#dfbddd]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap gap-2 justify-center">
             {categories.map((category, index) => (
-  <Button
-    key={index}
-    className="rounded-full bg-black text-white hover:bg-[#b6b09f] hover:text-black"
-  >
-    {category}
-  </Button>
-))}
-
-            
+              <Button
+              key={index}
+              className="rounded-full bg-black text-white hover:bg-[#b6b09f] hover:text-black">
+              {category}
+              </Button>
+            )            
+          )}
           </div>
         </div>
       </section>
 
       {/* Recent Posts */}
-      <section className="py-20 bg-[#2e141c]">
+      <section className="py-20 bg-[#dfbddd]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-12">Recent Articles</h2>
+          <h2 className="text-3xl font-bold text-black mb-12">Recent Articles</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {recentPosts.map((post) => (
@@ -214,13 +239,13 @@ const Blog = () => {
       </section>
 
       {/* Newsletter Signup */}
-      <section className="py-20 bg-[#2e141c] text-white">
+      <section className="py-20 bg-[#dfbddd] text-black">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Stay Updated</h2>
-          <p className="text-xl text-[#f2f2f2] mb-8">
+          <p className="text-xl text-zinc-800 mb-8">
             Subscribe to our newsletter and never miss an important update about education and career opportunities.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+          {/*<div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
             <input
               type="email"
               placeholder="Enter your email"
@@ -229,7 +254,24 @@ const Blog = () => {
             <Button className="bg-[#b6b09f] text-black hover:bg-[#eae4d5]">
               Subscribe
             </Button>
-          </div>
+          </div>*/}
+          <form onSubmit={handleSubscribe}
+            className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+            <input type="email" value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Enter your email" required
+              className="flex-1 px-4 py-3 rounded-lg text-black border border-[#b6b09f] focus:outline-none focus:border-[#eae4d5]"
+            />
+            <Button type="submit"
+            className="bg-[#c72828] text-white hover:bg-[#eae4d5] hover:text-zinc-800">
+              Subscribe
+            </Button>
+          </form>
+
+          {status && (
+          <p className="text-sm text-[#f2f2f2] mt-4">{status}</p>
+        )}
+
         </div>
       </section>
     </div>

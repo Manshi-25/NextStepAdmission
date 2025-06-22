@@ -19,6 +19,13 @@ const Contact = () => {
     message: ""
   });
 
+  const handleWhatsAppClick = () => {
+    const phoneNumber = "918062179905"; // Replace with actual WhatsApp number
+    const message = "Hi! I'm interested in educational consultation services. Can you help me?";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
     
@@ -84,24 +91,24 @@ const Contact = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#2e141c]">
+    <div className="min-h-screen bg-[#905989]">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-[#2e141c] to-black text-white py-20">
+      <section className="bg-gradient-to-r from-[#b159ac] to-[#905989] text-black py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">Contact Us</h1>
-          <p className="text-xl text-[#f2f2f2]">
+          <p className="text-xl text-zinc-800">
             Get in touch with our expert counselors and start your educational journey today.
           </p>
         </div>
       </section>
 
       {/* Contact Form and Info */}
-      <section className="py-20 bg-[#2e141c]">
+      <section className="py-20 bg-[#dfbddd]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div>
-              <h2 className="text-3xl font-bold text-white mb-6">Send us a Message</h2>
+              <h2 className="text-3xl font-bold text-black mb-6">Send us a Message</h2>
               <Card className="bg-white border-[#b6b09f]">
                 <CardContent className="pt-6">
                   <form onSubmit={handleSubmit} className="space-y-6">
@@ -177,7 +184,7 @@ const Contact = () => {
                 </CardContent>
               </Card>
               <div className="mt-12">
-                <h2 className="text-3xl font-bold text-white mb-6">Social Links</h2>
+                <h2 className="text-3xl font-bold text-black mb-6">Social Links</h2>
                 <div className="space-y-6">
                   <Card className="bg-white border-[#b6b09f] ">
                     <CardContent className="pt-6">
@@ -199,7 +206,7 @@ const Contact = () => {
             
             {/* Contact Information */}
             <div>
-              <h2 className="text-3xl font-bold text-white mb-6">Get in Touch</h2>
+              <h2 className="text-3xl font-bold text-black mb-6">Get in Touch</h2>
               <div className="space-y-6">
                 {contactInfo.map((info, index) => (
                   <Card key={index} className="bg-white border-[#b6b09f]">
@@ -227,11 +234,11 @@ const Contact = () => {
       </section>
 
       {/* Map Section */}
-      <section className="py-20 bg-[#2e141c]">
+      <section className="py-20 bg-[#dfbddd]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-4">Find Our Office</h2>
-            <p className="text-xl text-slate-200">Visit us for personalized consultation</p>
+            <h2 className="text-3xl font-bold text-black mb-4">Find Our Office</h2>
+            <p className="text-xl text-zinc-800">Visit us for personalized consultation</p>
           </div>
           
           <div className="bg-[#eae4d5] border border-[#b6b09f] rounded-lg h-96 flex items-center justify-center">
@@ -262,14 +269,14 @@ const Contact = () => {
           <p className="text-xl text-[#f2f2f2] mb-8">
             Chat with our counselors on WhatsApp for quick assistance and guidance.
           </p>
-          <Button size="lg" className="bg-[#b6b09f] text-black hover:bg-[#eae4d5]">
+          <Button onClick={handleWhatsAppClick} size="lg" className="bg-[#b6b09f] text-black hover:bg-[#eae4d5]">
             <MessageCircle className="mr-2 h-5 w-5" />
             Chat on WhatsApp
           </Button>
         </div>
       </section>
     </div>
-  );
+  ); 
 };
 
 export default Contact;

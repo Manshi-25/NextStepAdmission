@@ -50,27 +50,27 @@ const About = () => {
   return (
     <div className="min-h-screen bg-[#2e141c]">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-[#2e141c] to-black text-white py-20">
+      <section className="bg-gradient-to-r from-[#b159ac] to-[#905989] text-black py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">About NextStepAdmission</h1>
-          <p className="text-xl text-[#f2f2f2]">
+          <p className="text-xl text-zinc-800 ">
             Empowering students to achieve their educational dreams through expert guidance and personalized support.
           </p>
         </div>
       </section>
 
       {/* Mission Section */}
-      <section className="py-20 bg-[##2e141c]">
+      <section className="py-20 bg-[#dfbddd]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-white mb-6">Our Mission</h2>
-              <p className="text-lg text-slate-200 mb-6">
+              <h2 className="text-3xl font-bold text-black mb-6">Our Mission</h2>
+              <p className="text-lg text-zinc-800 mb-6">
                 At NextStepAdmission, our mission is to bridge the gap between students' aspirations and their 
                 educational achievements. We believe that every student deserves access to quality education 
                 and the right guidance to make informed decisions about their future.
               </p>
-              <p className="text-lg text-slate-200">
+              <p className="text-lg text-zinc-800">
                 Since our establishment, we have been committed to providing comprehensive educational 
                 counseling services that empower students to unlock their full potential and pursue their 
                 dream careers, whether in India or abroad.
@@ -88,11 +88,11 @@ const About = () => {
       </section>
 
       {/* Values Section */}
-      <section className="py-20 bg-[#2e141c]">
+      <section className="py-20 bg-[#dfbddd]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-white mb-4">Our Core Values</h2>
-            <p className="text-xl text-slate-200">
+            <h2 className="text-3xl font-bold text-black mb-4">Our Core Values</h2>
+            <p className="text-xl text-zinc-800">
               The principles that guide everything we do
             </p>
           </div>
@@ -116,11 +116,11 @@ const About = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-20 bg-[##2e141c]">
+      <section className="py-20 bg-[#dfbddd]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-white mb-4">Meet Our Expert Team</h2>
-            <p className="text-xl text-slate-200">
+            <h2 className="text-3xl font-bold text-blck mb-4">Meet Our Expert Team</h2>
+            <p className="text-xl text-zinc-800">
               Experienced professionals dedicated to your success
             </p>
           </div>
@@ -161,30 +161,31 @@ const About = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-20 bg-[#2e141c] text-white">
+      {/* Stats Section [#b6b09f] */}
+      <section className="py-20 bg-[#dfbddd] text-blck">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Our Track Record</h2>
-            <p className="text-xl text-[#f2f2f2]">Numbers that speak for our commitment</p>
+            <p className="text-xl text-zinc-800">Numbers that speak for our commitment</p>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-bold mb-2 text-[#b6b09f]">5000+</div>
-              <div className="text-[#f2f2f2]">Students Guided</div>
+              <div className="text-4xl font-bold mb-2 text-zinc-800
+              ">5000+</div>
+              <div className="text-zinc-800">Students Guided</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold mb-2 text-[#b6b09f]">98%</div>
-              <div className="text-[#f2f2f2]">Success Rate</div>
+              <div className="text-4xl font-bold mb-2 text-zinc-800">98%</div>
+              <div className="text-zinc-800">Success Rate</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold mb-2 text-[#b6b09f]">50+</div>
-              <div className="text-[#f2f2f2]">Partner Universities</div>
+              <div className="text-4xl font-bold mb-2 text-zinc-800">50+</div>
+              <div className="text-zinc-800">Partner Universities</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold mb-2 text-[#b6b09f]">15+</div>
-              <div className="text-[#f2f2f2]">Countries Covered</div>
+              <div className="text-4xl font-bold mb-2 text-zinc-800">15+</div>
+              <div className="text-zinc-800">Countries Covered</div>
             </div>
           </div>
         </div>

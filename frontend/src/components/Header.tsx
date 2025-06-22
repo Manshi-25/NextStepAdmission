@@ -24,7 +24,7 @@ const Header = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="bg-[#2e141c] shadow-lg sticky top-0 z-50">
+    <header className="bg-[#dfbddd] shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4 ">
           {/* Logo */}
@@ -35,7 +35,7 @@ const Header = () => {
               style={{ transform: "scale(2.2)" }}/>
             </div>
             {/*<GraduationCap className="h-8 w-8 text-white" />*/}
-            <span className=" text-2xl font-bold text-white">NextStepAdmission</span>
+            <span className=" text-2xl font-bold text-black">NextStepAdmission</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -44,8 +44,8 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-sm font-medium transition-colors text-white hover:text-black ${
-                  isActive(item.href) ? "text-white font-semibold" : "text-gray-800"
+                className={`text-sm font-medium transition-colors text-black hover:text-gray-500 ${
+                  isActive(item.href) ? "text-white font-semibold" : "text-gray-500"
                 }`}
               >
                 {item.name}
@@ -58,7 +58,7 @@ const Header = () => {
           {isAuthenticated ? (
           <div className="relative">
             <button onClick={() => setIsDropdownOpen((prev) => !prev)}
-              className="flex items-center space-x-2 text-white hover:text-gray-300">
+              className="flex items-center space-x-2 text-black hover:text-gray-300">
               <UserCircle2 className="w-7 h-7" />
               <ChevronDown className="w-4 h-4" />
             </button>
@@ -84,7 +84,7 @@ const Header = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-white hover:text-gray-800"
+              className="text-black hover:text-black"
             >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -99,8 +99,8 @@ const Header = () => {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`block px-3 py-2 text-sm font-medium transition-colors hover:text-zinc-400 ${
-                    isActive(item.href) ? "text-white font-semibold" : "text-white"
+                  className={`block px-3 py-2 text-sm font-medium transition-colors hover:text-gray-500 ${
+                    isActive(item.href) ? "text-white font-semibold" : "text-black"
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -111,7 +111,7 @@ const Header = () => {
                 {isAuthenticated ? (
                 <div className="relative">
                   <button onClick={() => setIsDropdownOpen((prev) => !prev)}
-                    className="flex items-center space-x-2 text-white hover:text-gray-300">
+                    className="flex items-center space-x-2 text-black hover:text-gray-500">
                     <UserCircle2 className="w-7 h-7" />
                     <ChevronDown className="w-4 h-4" />
                   </button>

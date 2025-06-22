@@ -38,14 +38,14 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-[#2e141c]">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#2e141c] to-black text-white py-20">
+      <section className="relative bg-gradient-to-br from-[#b159ac] to-[#905989] text-black py-20">
         <div className="absolute inset-0 opacity-20"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-              Your Gateway to <span className="text-[#eae4d5]">Educational Excellence</span>
+              Your Gateway to <span className="text-black">Educational Excellence</span>
             </h1>
-            <p className="text-xl sm:text-2xl mb-8 text-slate-200 max-w-3xl mx-auto">
+            <p className="text-xl sm:text-2xl mb-8 text-zinc-800 max-w-3xl mx-auto">
               Expert career counseling, admission guidance, and study abroad assistance to help you achieve your dreams.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -60,14 +60,14 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-20 bg-[#933d57]">
+      {/* Features Section bg-[#4a2c39] */}
+      <section className="py-20 bg-[#dfbddd]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-black mb-4">
               How We Help You Succeed
             </h2>
-            <p className="text-xl text-slate-200 max-w-2xl mx-auto">
+            <p className="text-xl text-zinc-800 max-w-2xl mx-auto">
               Comprehensive educational services designed to guide you at every step of your academic journey.
             </p>
           </div>
@@ -91,13 +91,13 @@ const Home = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-[#2e141c] text-white">
+      <section className="py-20 bg-[#dfbddd] text-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-4xl sm:text-5xl font-bold mb-2">{stat.number}</div>
-                <div className="text-slate-200 text-lg">{stat.label}</div>
+                <div className="text-zinc-800 text-lg">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -105,14 +105,14 @@ const Home = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 bg-[#2e141c]">
+      <section className="py-20 bg-[#dfbddd]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+              <h2 className="text-3xl sm:text-4xl font-bold text-black mb-6">
                 Why Choose NextStepAdmission?
               </h2>
-              <p className="text-lg text-slate-200 mb-8">
+              <p className="text-lg text-zinc-800 mb-8">
                 With years of experience and a proven track record, we provide personalized guidance 
                 to help you make informed decisions about your education and career.
               </p>
@@ -128,7 +128,7 @@ const Home = () => {
                 ].map((benefit, index) => (
                   <div key={index} className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-green-500" />
-                    <span className="text-slate-300">{benefit}</span>
+                    <span className="text-zinc-900">{benefit}</span>
                   </div>
                 ))}
               </div>
@@ -146,7 +146,7 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-black text-white">
+      <section className="py-20 bg-[black] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">
             Ready to Start Your Educational Journey?

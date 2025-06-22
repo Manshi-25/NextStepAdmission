@@ -110,28 +110,28 @@ const Services = () => {
   return (
     <div className="min-h-screen bg-[#2e141c]">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-[#2e141c] to-black text-white py-20">
+      <section className="bg-gradient-to-r from-[#b159ac] to-[#905989] text-black py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">Our Services</h1>
-          <p className="text-xl text-[#f2f2f2]">
+          <p className="text-xl text-zinc-800">
             Comprehensive educational consulting services designed to guide you at every step of your academic journey.
           </p>
         </div>
       </section>
 
       {/* Services Grid */}
-      <section className="py-20 bg-[#2e141c]">
+      <section className="py-20 bg-[#dfbddd]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-white mb-4">What We Offer</h2>
-            <p className="text-xl text-slate-200">
+            <h2 className="text-3xl font-bold text-black mb-4">What We Offer</h2>
+            <p className="text-xl text-zinc-800">
               Expert services tailored to your educational and career needs
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <Card key={index} className="h-full hover:shadow-lg transition-shadow bg-white hover:bg-slate-200 border-[#b6b09f]">
+              <Card key={index} className="h-full hover:shadow-lg transition-shadow bg-[#ffffff] hover:bg-slate-200 border-[#b6b09f]">
                 <CardHeader className="text-center">
                   <div className="flex justify-center mb-4">
                     {service.icon}
@@ -156,11 +156,11 @@ const Services = () => {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-[#2e141c]">
+      <section className="py-20 bg-[#dfbddd]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-white mb-4">Our Process</h2>
-            <p className="text-xl text-slate-200">
+            <h2 className="text-3xl font-bold text-black mb-4">Our Process</h2>
+            <p className="text-xl text-zinc-800">
               A structured approach to ensure your success
             </p>
           </div>
@@ -168,11 +168,11 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {process.map((step, index) => (
               <div key={index} className="text-center">
-                <div className="bg-[#ff81a7] text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                <div className="bg-[#f35786] text-zinc-800 rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                   {step.step}
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-2">{step.title}</h3>
-                <p className="text-slate-200">{step.description}</p>
+                <h3 className="text-xl font-semibold text-zinc-800 mb-2">{step.title}</h3>
+                <p className="text-zinc-800">{step.description}</p>
               </div>
             ))}
           </div>

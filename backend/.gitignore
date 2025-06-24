@@ -1,1 +1,4 @@
 .env
+account.js
+authMiddleware.js
+ChangesUser.js

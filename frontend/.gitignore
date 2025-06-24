@@ -1,4 +1,6 @@
-env
+.env
+ProfileContext.tsx
+MyPage.tsx
 # Logs
 logs
 *.log

@@ -14,88 +14,166 @@ import {
 const StudyAbroad = () => {
   const countries = [
     {
-      name: "Canada",
-      flag: "🇨🇦",
-      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=400&h=250&q=80",
+      name: "Singapore",
+      flag: "SG",
+      image: "https://plus.unsplash.com/premium_photo-1697730373939-3ebcaa9d295e?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2luZ2Fwb3JlfGVufDB8fDB8fHww",
       highlights: [
         "Post-graduation work permits",
-        "Affordable tuition fees",
+        "Strong career and internship networks",
         "Multicultural environment",
-        "Pathway to permanent residency"
+        "Safe and modern campus environments",
+        "Globally ranked universities",
       ],
-      popularCourses: ["Engineering", "Business", "Computer Science", "Healthcare"],
+      popularCourses: ["Engineering", "Business", "IT", "Hospitality"],
       duration: "1-4 years",
-      costRange: "$15,000 - $35,000 CAD/year"
+      costRange: "SGD 20,000 - 40,000 per year"
     },
     {
       name: "United Kingdom",
       flag: "🇬🇧",
-      image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=400&h=250&q=80",
+      image: "https://images.unsplash.com/photo-1728995847884-7a102e92d1bc?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHVuaXRlZCUyMGtpbmdkb20lMjB1bml2ZXJzaXR5fGVufDB8fDB8fHww",
       highlights: [
-        "World-renowned universities",
-        "Shorter course duration",
+        "Top global universities like Oxford and Cambridge",
+        "Wide range of scholarships available",
         "Rich cultural heritage",
-        "Global recognition"
+        "Global recognition",
+        "Post-study work visa for 2 years"
       ],
       popularCourses: ["Medicine", "Law", "Business", "Arts & Humanities"],
-      duration: "1-3 years",
-      costRange: "£12,000 - £45,000/year"
+      duration: "1-4 years",
+      costRange: "£10,000 - £35,000/year"
     },
     {
       name: "Australia",
       flag: "🇦🇺",
-      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=400&h=250&q=80",
+      image: "https://images.unsplash.com/photo-1624138784614-87fd1b6528f8?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YXVzdHJhbGlhfGVufDB8fDB8fHww",
       highlights: [
+        "Top universities like University of Melbourne, UNSW",
         "High quality of life",
-        "Work while studying",
-        "Beautiful landscapes",
-        "Strong job market"
+        "Work part-time while studying",
+        "English-taught globally accepted degrees",
+        "Post-study work options up to 4 years"
       ],
-      popularCourses: ["Mining", "Agriculture", "Tourism", "Marine Science"],
+      popularCourses: ["Nursing", "Engineering", "Tourism", "Marine Science","Business"],
       duration: "1-4 years",
       costRange: "$20,000 - $45,000 AUD/year"
     },
     {
-      name: "United States",
-      flag: "🇺🇸",
-      image: "https://img.freepik.com/free-photo/new-york-cityscape_181624-4671.jpg?semt=ais_hybrid&w=740",
+      name: "Mauritius",
+      flag: "MU",
+      image: "https://images.unsplash.com/photo-1619267135268-059627071ce8?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1hdXJpdGl1cyUyMHVuaXZlcnNpdHl8ZW58MHx8MHx8fDA%3D",
       highlights: [
-        "Top-ranking universities",
+        "Affordable international universities",
         "Research opportunities",
         "Diverse programs",
-        "Innovation hub"
+        "English and French medium of instruction",
+        "Opportunity to work part-time"
       ],
-      popularCourses: ["Technology", "MBA", "Medicine", "Engineering"],
-      duration: "2-4 years",
-      costRange: "$25,000 - $60,000 USD/year"
+      popularCourses: ["Business", "IT", "Medicine", "Engineering"],
+      duration: "1-4 years",
+      costRange: "USD 5,000 - 15,000 per year"
     },
     {
       name: "Germany",
       flag: "🇩🇪",
-      image: "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=400&h=250&q=80",
+      image: "https://images.unsplash.com/photo-1711971855079-e97732103795?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Z2VybWFueSUyMHVuaXZlcnNpdHl8ZW58MHx8MHx8fDA%3D",
       highlights: [
-        "Low/No tuition fees",
-        "Strong economy",
+        "Public universities with little or no tuition fee",
+        "Strong technical and research-based programs",
         "Engineering excellence",
-        "Central European location"
+        "English-taught programs increasing",
+        "Work part-time during studies and stay-back options"
       ],
       popularCourses: ["Engineering", "Technology", "Business", "Research"],
-      duration: "2-3 years",
-      costRange: "€500 - €3,000/year"
+      duration: "2-4 years",
+      costRange: "€0 - 15,000 per year"
     },
     {
-      name: "New Zealand",
-      flag: "🇳🇿",
-      image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=400&h=250&q=80",
+      name: "France",
+      flag: "FR",
+      image: "https://images.unsplash.com/photo-1473951574080-01fe45ec8643?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZnJhbmNlfGVufDB8fDB8fHww",
       highlights: [
-        "Safe and peaceful",
+        "Top universities and grandes écoles",
+        "Affordable tuition and student housing",
         "Small class sizes",
-        "Adventure lifestyle",
+        "Work part-time and explore Europe",
         "English-speaking"
       ],
-      popularCourses: ["Agriculture", "Environmental Science", "Tourism", "Arts"],
+      popularCourses: ["Fashion", "Environmental Science","Business", "Tourism", "Arts"],
       duration: "1-4 years",
-      costRange: "$18,000 - $35,000 NZD/year"
+      costRange: "€2,000 - 20,000 per year"
+    },
+    {
+      name: "Ireland",
+      flag: "IE",
+      image: "https://images.unsplash.com/photo-1700609017939-132dc1fdff41?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGlyZWxhbmQlMjB1bml2ZXJzaXR5fGVufDB8fDB8fHww",
+      highlights: [
+        "Fast-growing technology and pharma sectors",
+        "Safe, student-friendly environment",
+        "Post-study work visa up to 2 years",
+        "Adventure lifestyle",
+        "English-speaking universities"
+      ],
+      popularCourses: ["Business", "Environmental Science", "Tourism", "Data Science", "Pharmacy"],
+      duration: "1-4 years",
+      costRange: "€10,000 - 25,000 per year"
+    },
+    {
+      name: "Cyprus",
+      flag: "CY",
+      image: "https://images.unsplash.com/photo-1661776724331-648bac1d2927?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y3lwcnVzJTIwdW5pdmVyc2l0eXxlbnwwfHwwfHx8MA%3D%3D",
+      highlights: [
+        "Affordable international universities",
+        "English widely spoken in universities",
+        "Part-time job opportunities for students",
+        "Warm, student-friendly environment",
+        "English-speaking"
+      ],
+      popularCourses: ["Business", "Medicine", "Hospitality", "IT"],
+      duration: "1-4 years",
+      costRange: "€5,000 - 15,000 per year"
+    },
+    {
+      name: "Malta",
+      flag: "MT",
+      image: "https://images.unsplash.com/photo-1569311607906-1d8f9e2614b5?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1hbHRhfGVufDB8fDB8fHww",
+      highlights: [
+        "English-taught programs with affordable fees",
+        "Safe and peaceful study environment",
+        "Part-time work allowed for students",
+        "Ideal climate and Mediterranean culture"
+      ],
+      popularCourses: ["Business", "Tourism", "IT", "Arts"],
+      duration: "1-4 years",
+      costRange: "€7,000 - 15,000 per year"
+    },
+    {
+      name: "United Arab Emirates",
+      flag: "AE",
+      image: "https://images.unsplash.com/photo-1687709644302-8eceed73f2dc?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fFVuaXRlZCUyMEFyYWIlMjBFbWlyYXRlcyUyMHVuaXZlcnNpdHl8ZW58MHx8MHx8fDA%3D",
+      highlights: [
+        "Modern, technology-driven campuses",
+        "English-taught international degrees",
+        "Growing global education hubs like Dubai",
+        "Tax-free work opportunities post-study"
+      ],
+      popularCourses: ["Business", "Engineering", "Hospitality", "IT"],
+      duration: "1-4 years",
+      costRange: "AED 30,000 - 75,000 per year"
+    },
+    {
+      name: "Canada",
+      flag: "CA",
+      image: "https://images.unsplash.com/photo-1576485976138-6c3cff620ae8?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNhbmFkYSUyMHVuaXZlcnNpdHl8ZW58MHx8MHx8fDA%3D",
+      highlights: [
+        "Top-ranked universities with global reputation",
+        "Post-study work visa up to 3 years",
+        "Safe and multicultural society",
+        "English and French-speaking campuses"
+      ],
+      popularCourses: ["IT", "Business", "Engineering", "Health Sciences"],
+      duration: "1-4 years",
+      costRange: "CAD 15,000 - 35,000 per year"
     }
   ];
 
@@ -153,7 +231,7 @@ const StudyAbroad = () => {
                     alt={country.name}
                     className="w-full h-48 object-cover"
                   />
-                  <div className="absolute top-4 left-4 text-3xl">{country.flag}</div>
+                  <div className="absolute top-4 left-4 text-3xl text-white">{country.flag}</div>
                 </div>
                 <CardHeader>
                   <CardTitle className="text-xl flex items-center justify-between">

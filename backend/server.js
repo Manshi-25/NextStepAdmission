@@ -7,15 +7,19 @@ import dotenv from 'dotenv';
 import Contact from './models/contact.js';
 import authRoutes from './routes/auth.js'; 
 import newsletterRoutes from './routes/newsletter.js';
+//import userRoutes from './routes/account.js';
 dotenv.config();
 
 // ✅ Define `app` before using it
   const app = express();
 
+  
 app.use(cors({ origin:'*'}));
 app.use(bodyParser.json());
 app.use('/api/auth', authRoutes);
 app.use('/api', newsletterRoutes);
+//app.use('/api/user', userRoutes);
+//app.use('/uploads', express.static('uploads'));
 
 // ✅ MongoDB connection
 mongoose.connect(process.env.MONGODB_URI)

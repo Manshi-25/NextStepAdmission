@@ -15,9 +15,8 @@ import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import NotFound from "./pages/NotFound";
 import AuthPage from "./pages/AuthPage";
-
+import MyPage from "./pages/MyPage";
 const queryClient = new QueryClient();
-
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
@@ -35,6 +34,7 @@ const App = () => (
               <Route path="/study-abroad" element={<StudyAbroad />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/blog" element={<Blog />} />
+              {/*<Route path="/account" element={<MyPage />}/>*/}
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>

@@ -15,7 +15,9 @@ import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import NotFound from "./pages/NotFound";
 import AuthPage from "./pages/AuthPage";
-import MyPage from "./pages/MyPage";
+import ProtectedRoute from "./components/ProtectedRoute";
+import AccountPage from "./pages/AccountPage";
+
 const queryClient = new QueryClient();
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -34,7 +36,7 @@ const App = () => (
               <Route path="/study-abroad" element={<StudyAbroad />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/blog" element={<Blog />} />
-              {/*<Route path="/account" element={<MyPage />}/>*/}
+              <Route path="/account" element={<ProtectedRoute><AccountPage /></ProtectedRoute>} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>

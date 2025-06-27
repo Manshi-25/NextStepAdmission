@@ -7,24 +7,23 @@ import dotenv from 'dotenv';
 import Contact from './models/contact.js';
 import authRoutes from './routes/auth.js'; 
 import newsletterRoutes from './routes/newsletter.js';
-//import userRoutes from './routes/account.js';
-dotenv.config();
+import profileRoutes from './routes/UserProfileRoutes.js';
+
 
 // ✅ Define `app` before using it
-  const app = express();
-
-  
+const app = express();
 app.use(cors({ origin:'*'}));
 app.use(bodyParser.json());
 app.use('/api/auth', authRoutes);
 app.use('/api', newsletterRoutes);
-//app.use('/api/user', userRoutes);
-//app.use('/uploads', express.static('uploads'));
-
+app.use('/uploads', express.static('uploads'));
+app.use('/api/profile', profileRoutes);
 // ✅ MongoDB connection
 mongoose.connect(process.env.MONGODB_URI)
   .then(() => console.log("✅ MongoDB connected"))
   .catch((err) => console.error("❌ MongoDB connection error:", err));
+
+
 
 
 // ✅ POST endpoint

@@ -28,7 +28,7 @@ const AuthPage = () => {
       if (token) {
         localStorage.setItem('token', token); // Store token for later
         localStorage.setItem('userEmail', form.email);
-        login(); // Set auth context
+        login(token); // Set auth context
         toast({
           className: "bg-white text-black",
           title: isSignIn ? "Login Successful" : "Signup Successful",

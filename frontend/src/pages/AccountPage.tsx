@@ -160,7 +160,7 @@ const AccountPage = () => {
             {profilePicFile ? (
               <img src={URL.createObjectURL(profilePicFile)} alt="Profile" className="w-full h-full object-cover" />
             ) : formValues.profilePic ? (
-              <img src={`http://localhost:5000/${formValues.profilePic}`} alt="Profile" className="w-full h-full object-cover" />
+              <img src={`${import.meta.env.VITE_API_URL}/${formValues.profilePic}`} alt="Profile" className="w-full h-full object-cover" />
             ) : (
               <UserCircle className="w-full h-full text-gray-400" />
             )}

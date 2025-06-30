@@ -26,7 +26,7 @@ const UserProfileSchema = new mongoose.Schema({
         required: true
     },
     name: String,
-    email: { type: String, unique: true },
+    email: { type: String, unique: true, required:true },
     phone: String,
     dob: String,
     gender: String,

@@ -25,7 +25,7 @@ export const updateMyProfile = async (req, res) => {
             const profileData = {
                 user: userId,
                 email:req.user.email,
-                ...req.body
+                name : req.user.name,
             };
             //simple fields
             const allowedFields = ['name', 'phone', 'dob', 'gender', 'age', 'address1', 'address2', 'city', 'state', 'country', 'zip'];

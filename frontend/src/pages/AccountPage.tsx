@@ -192,7 +192,7 @@ const AccountPage = () => {
             <input type="email" name="email" placeholder="Email" value={formValues.email} readOnly className="w-full px-4 py-3 border rounded-lg bg-gray-100" />
             <input type="text" name="phone" placeholder="Phone Number" value={formValues.phone} onChange={handleChange} className="w-full px-4 py-3 border rounded-lg" />
             <input type="text" name="age" placeholder="Age" value={formValues.age} onChange={handleChange} className="w-full px-4 py-3 border rounded-lg" />
-            <input type="date" name="dob" value={formValues.dob} onChange={handleChange} className="w-full px-4 py-3 border rounded-lg" />
+            <input type="date" name="dob" placeholder='DOB ' value={formValues.dob} onChange={handleChange} className="w-full px-4 py-3 border rounded-lg" />
             <select name="gender" value={formValues.gender} onChange={handleChange} className="w-full px-4 py-3 border rounded-lg">
               <option value="">Select Gender</option>
               <option value="Male">Male</option>

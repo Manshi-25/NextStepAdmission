@@ -6,7 +6,16 @@ export const getMyProfile = async (req, res) => {
     try {
         const profile = await UserProfile.findOne({user:req.user._id});
         if (!profile) {
-            return res.status(404).json({ message: 'Profile not found' });
+            const profileData = {
+                user: req.user._id,
+                email: req.user.email,
+                name: req.user.name, // ✅ Automatically save name from req.user
+            };
+            profile = new UserProfile(profileData);
+            await profile.save();
+
+            console.log("Profile created automatically");
+            //return res.status(404).json({ message: 'Profile not found' });
         }
         res.json(profile);
     } catch (err) {

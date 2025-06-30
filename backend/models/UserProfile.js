@@ -19,6 +19,12 @@ const SchoolingSchema = new mongoose.Schema({
 },{ _id: false });
 
 const UserProfileSchema = new mongoose.Schema({
+    user: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User',
+        unique: true,
+        required: true
+    },
     name: String,
     email: { type: String, unique: true },
     phone: String,

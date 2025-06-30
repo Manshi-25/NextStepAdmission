@@ -4,7 +4,7 @@ import UserProfile from '../models/UserProfile.js';
 
 export const getMyProfile = async (req, res) => {
     try {
-        const profile = await UserProfile.findById(req.user.id);
+        const profile = await UserProfile.findOne({user:req.user._id});
         if (!profile) {
             return res.status(404).json({ message: 'Profile not found' });
         }
@@ -17,13 +17,14 @@ export const getMyProfile = async (req, res) => {
 
 export const updateMyProfile = async (req, res) => {
     try {
-        const userId = req.user.id;
+        const userId = req.user._id;
 
-        let profile = await UserProfile.findById(userId );
+        let profile = await UserProfile.findOne({user:userId});
 
         if (!profile) {
             const profileData = {
-                _id: userId,
+                user: userId,
+                email:req.user.email,
                 ...req.body
             };
             //simple fields

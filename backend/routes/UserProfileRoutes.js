@@ -6,6 +6,7 @@ const router = express.Router();
 
 // Get Profile
 router.get('/me', auth, getMyProfile);
+//router.post('/', auth, upload.single('profilePic'), createUserProfile);
 
 // Create/Update Profile
 router.put('/me', auth, upload.single('profilePic'), updateMyProfile);

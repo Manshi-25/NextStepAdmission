@@ -13,7 +13,7 @@ export const UserProfileProvider = ({ children }) => {
   const fetchUserProfile = async () => {
     try {
       if (!token) return;
-      const res = await axios.get('http://localhost:5000/api/profile/me', {
+      const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/profile/me`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setProfile(res.data);
@@ -22,7 +22,7 @@ export const UserProfileProvider = ({ children }) => {
       if (err.response && err.response.status === 404) {
       console.warn('Profile not found. Creating a new one...');
       try {
-          const createRes = await axios.put('http://localhost:5000/api/profile/me', {}, {
+          const createRes = await axios.put(`${import.meta.env.VITE_API_URL}/api/profile/me`, {}, {
             headers: { Authorization: `Bearer ${token}` }
           });
           setProfile(createRes.data);
@@ -50,9 +50,9 @@ export const UserProfileProvider = ({ children }) => {
 
       if (updatedData instanceof FormData) { 
         config.headers['Content-Type'] = 'multipart/form-data';
-        response = await axios.put('http://localhost:5000/api/profile/me', updatedData, config);
+        response = await axios.put(`${import.meta.env.VITE_API_URL}/api/profile/me`, updatedData, config);
       } else {
-        response = await axios.put('http://localhost:5000/api/profile/me', updatedData, config);
+        response = await axios.put(`${import.meta.env.VITE_API_URL}/api/profile/me`, updatedData, config);
       }
 
       setProfile(response.data);

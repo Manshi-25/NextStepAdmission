@@ -67,7 +67,7 @@ const Contact = () => {
     {
       icon: <Phone className="h-6 w-6 text-[#b6b09f]" />,
       title: "Phone",
-      details: ["+91 80621 79905", "+91 80908 90894"],
+      details: ["+91 80621 79905"],
       description: "Call us for immediate assistance"
     },
     {

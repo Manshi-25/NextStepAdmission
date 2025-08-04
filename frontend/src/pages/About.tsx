@@ -35,7 +35,7 @@ const About = () => {
     {
       name: "Ravi Shukla",
       role: "Founder & CEO",
-      experience: "15+ years in education counseling",
+      experience: "10+ years in education counseling",
       about_him:"Ravi Shukla is a seasoned education counselor with 15+ years of experience guiding students toward their academic and professional goals. He offers personalized support, especially for those aspiring to study abroad—helping with everything from choosing the right country and university to handling admissions, visas, and scholarships. Ravi’s expert mentorship empowers students to confidently pursue global educational opportunities.Here is the link to his certifications",
       image: pic,
       certificates : [

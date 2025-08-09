@@ -65,7 +65,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-[#b6b09f] mt-8 pt-8 text-center">
-          <p className="text-[#f2f2f2]">&copy; 2024 NextStepAdmission. All rights reserved.</p>
+          <p className="text-[#f2f2f2]">&copy; 2025 NextStepAdmission. All rights reserved.</p>
         </div>
       </div>
     </footer>

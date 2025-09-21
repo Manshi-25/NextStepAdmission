@@ -20,7 +20,7 @@ const Contact = () => {
   });
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = "918062179905"; // Replace with actual WhatsApp number
+    const phoneNumber = "+91 99199 91649"; // Replace with actual WhatsApp number
     const message = "Hi! I'm interested in educational consultation services. Can you help me?";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -67,7 +67,7 @@ const Contact = () => {
     {
       icon: <Phone className="h-6 w-6 text-[#b6b09f]" />,
       title: "Phone",
-      details: ["+91 80621 79905"],
+      details: ["+91 99199 91649"],
       description: "Call us for immediate assistance"
     },
     {

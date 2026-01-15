@@ -20,7 +20,7 @@ const Contact = () => {
   });
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = "+91 99199 91649"; // Replace with actual WhatsApp number
+    const phoneNumber = "+91 9919991649"; // Replace with actual WhatsApp number
     const message = "Hi! I'm interested in educational consultation services. Can you help me?";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -65,25 +65,25 @@ const Contact = () => {
 
   const contactInfo = [
     {
-      icon: <Phone className="h-6 w-6 text-[#b6b09f]" />,
+      icon: <Phone className="h-6 w-6 text-[#0A3D62]" />,
       title: "Phone",
       details: ["+91 99199 91649"],
       description: "Call us for immediate assistance"
     },
     {
-      icon: <Mail className="h-6 w-6 text-[#b6b09f]" />,
+      icon: <Mail className="h-6 w-6 text-[#0A3D62]" />,
       title: "Email",
       details: ["Enquiry@nextstepadmission.in"],
       description: "Send us an email anytime"
     },
     {
-      icon: <MapPin className="h-6 w-6 text-[#b6b09f]" />,
+      icon: <MapPin className="h-6 w-6 text-[#0A3D62]" />,
       title: "Address",
       details: ["Co-Workers 5/588, Near Dayal Paradise Hotel , Vikas Khand ,"," Gomti Nagar ", "Lucknow - 226010, India"],
       description: "Visit our office for consultation"
     },
     {
-      icon: <Clock className="h-6 w-6 text-[#b6b09f]" />,
+      icon: <Clock className="h-6 w-6 text-[#0A3D62]" />,
       title: "Office Hours",
       details: ["Mon - Sat: 9:00 AM - 7:00 PM", "Sunday: 10:00 AM - 4:00 PM"],
       description: "We're here to help you"
@@ -91,24 +91,24 @@ const Contact = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#EBEDDF]">
+    <div className="min-h-screen bg-[#F8F9FA]">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-[#EBEDDF] to-[#EBEDDF] text-black py-20">
+      <section className="bg-gradient-to-r from-[#F8F9FA]  text-[#0A3D62] py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">Contact Us</h1>
-          <p className="text-xl text-zinc-800">
+          <p className="text-xl text-[#0A3D62]">
             Get in touch with our expert counselors and start your educational journey today.
           </p>
         </div>
       </section>
 
       {/* Contact Form and Info */}
-      <section className="py-20 bg-[#EBEDDF]">
+      <section className="py-20 bg-[#F8F9FA]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div>
-              <h2 className="text-3xl font-bold text-black mb-6">Send us a Message</h2>
+              <h2 className="text-3xl font-bold text-[#0A3D62] mb-6">Send us a Message</h2>
               <Card className="bg-white border-[#0f0e0b]">
                 <CardContent className="pt-6">
                   <form onSubmit={handleSubmit} className="space-y-6">
@@ -177,14 +177,14 @@ const Contact = () => {
                       />
                     </div>
                     
-                    <Button type="submit" size="lg" className="w-full bg-black text-white hover:bg-[#b6b09f] hover:text-black">
+                    <Button type="submit" size="lg" className="w-full bg-[#0A3D62] text-white hover:bg-[#1E90FF] hover:text-black">
                       Send Message
                     </Button>
                   </form>
                 </CardContent>
               </Card>
               <div className="mt-12">
-                <h2 className="text-3xl font-bold text-black mb-6">Social Links</h2>
+                <h2 className="text-3xl font-bold text-[#0A3D62] mb-6">Social Links</h2>
                 <div className="space-y-6">
                   <Card className="bg-white border-[#11100d] ">
                     <CardContent className="pt-6">
@@ -206,7 +206,7 @@ const Contact = () => {
             
             {/* Contact Information */}
             <div>
-              <h2 className="text-3xl font-bold text-black mb-6">Get in Touch</h2>
+              <h2 className="text-3xl font-bold text-[#0A3D62] mb-6">Get in Touch</h2>
               <div className="space-y-6">
                 {contactInfo.map((info, index) => (
                   <Card key={index} className="bg-white border-[#0c0b05]">
@@ -234,10 +234,10 @@ const Contact = () => {
       </section>
 
       {/* Map Section */}
-      <section className="py-20 bg-[#EBEDDF]">
+      <section className="py-20 bg-[#F8F9FA]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-black mb-4">Find Our Office</h2>
+            <h2 className="text-3xl font-bold text-[#0A3D62] mb-4">Find Our Office</h2>
             <p className="text-xl text-zinc-800">Visit us for personalized consultation</p>
           </div>
           
@@ -262,7 +262,7 @@ const Contact = () => {
       </section>
 
       {/* WhatsApp CTA */}
-      <section className="py-20 bg-[#EBEDDF] text-black">
+      <section className="py-20 bg-[#F8F9FA] text-black">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <MessageCircle className="h-16 w-16 mx-auto mb-6 text-green-500" />
           <h2 className="text-3xl font-bold mb-6">Need Immediate Help?</h2>
